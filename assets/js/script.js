@@ -18,18 +18,18 @@ const prodotti = [
   {
     nome: "Cuffie wireless",
     categoria: "elettronica",
-    prezzo: 90
+    prezzo: 90,
     rating: 4.2,
     immagine: "Cuffie",
-    disponibile: true
+    disponibile: true,
   },
   {
-    nome: "Tablet 32gb"
+    nome: "Tablet 32gb",
     categoria: "elettronica",
     prezzo: 200,
     rating: 4.7,
     immagine: "Tablet",
-    disponibile: true
+    disponibile: true,
   },
   {
     nome: "Libri liberi",
@@ -37,15 +37,15 @@ const prodotti = [
     prezzo: 15,
     rating: 4.0,
     immagine: "Libro",
-    disponibile: true
+    disponibile: true,
   },
   {
-    nome: "Zaino da trekking"
+    nome: "Zaino da trekking",
     categoria: "abbigliamento",
     prezzo: 50,
     rating: 4.3,
     immagine: "Zaino",
-    disponibile: false
+    disponibile: false,
   },
   {
     nome: "Lampada LED",
@@ -53,7 +53,7 @@ const prodotti = [
     prezzo: 29,
     rating: 3.8,
     immagine: "Lampada",
-    disponibile: false
+    disponibile: false,
   },
   {
     nome: "Smartwatch GPS",
@@ -61,7 +61,7 @@ const prodotti = [
     prezzo: 119,
     rating: 4.4,
     immagine: "Smartwatch",
-    disponibile: true
+    disponibile: true,
   },
   {
     nome: "Mouse wireless",
@@ -69,7 +69,7 @@ const prodotti = [
     prezzo: 25,
     rating: 4.1,
     immagine: "Mouse",
-    disponibile: true
+    disponibile: true,
   },
   {
     nome: "Moka",
@@ -77,7 +77,7 @@ const prodotti = [
     prezzo: 22,
     rating: 4.6,
     immagine: "Caffettiera",
-    disponibile: true
+    disponibile: true,
   },
   {
     nome: "Romanzo storico",
@@ -85,7 +85,7 @@ const prodotti = [
     prezzo: 13,
     rating: 4.5,
     immagine: "Romanzo",
-    disponibile: false
+    disponibile: false,
   },
   {
     nome: "Giacca invernale",
@@ -93,7 +93,7 @@ const prodotti = [
     prezzo: 89,
     rating: 4.2,
     immagine: "Giacca",
-    disponibile: false
+    disponibile: false,
   },
   {
     nome: "Aspirapolvere Dayson",
@@ -101,7 +101,7 @@ const prodotti = [
     prezzo: 249,
     rating: 4.8,
     immagine: "Aspirapolvere",
-    disponibile: true
+    disponibile: true,
   },
   {
     nome: "Tastiera meccanica",
@@ -109,8 +109,8 @@ const prodotti = [
     prezzo: 79,
     rating: 4.3,
     immagine: "Tastiera",
-    disponibile: false
-  }
+    disponibile: false,
+  },
 ];
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
    Funzione che ritorna una stringa tipo "€ 19,99".
@@ -118,7 +118,10 @@ const prodotti = [
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function formattaPrezzo(prezzo) {
+  return prezzo + "€";
+}
+console.log(formattaPrezzo(150));
 /* VERSIONE INTERMEDIA — stelline(rating)
    Funzione che ritorna una stringa di stelline piene/vuote.
    Esempio: rating 3 → "★★★☆☆"
@@ -126,13 +129,33 @@ const prodotti = [
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function stelline(rating) {
+  let stelle = "";
+  for (let i = 1; i <= 5; i++) {
+    if (i <= rating) {
+      stelle = stelle + "★";
+    } else {
+      stelle = stelle + "☆";
+    }
+  }
+  return stelle;
+}
+console.log(stelline(3));
 /* VERSIONE INTERMEDIA — Filtro per categoria
    Funzione che riceve il parametro categoria e filtra l'array prodotti mostrando solo i prodotti della categoria ricevuta
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+function filtroProdotti(categoria) {
+  let prodottiMostrati = [];
+  for (let i = 0; i < prodotti.length; i++) {
+    if (prodotti[i].categoria === categoria) {
+      prodottiMostrati.push(prodotti[i]);
+    }
+  }
+  return prodottiMostrati;
+}
+console.log(filtroProdotti("casa"));
 /* VERSIONE INTERMEDIA — Filtro disponibilità e rating
    Funzione che genera un array filtrato dall'array prodotti, mostrando soltanto i prodotti disponibili con rating >= 3
 */

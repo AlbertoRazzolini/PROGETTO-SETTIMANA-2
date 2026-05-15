@@ -36,7 +36,7 @@ header {
   background: #131921;
   padding: 0.8% 2%;
   font-size: 0;
-  text-wrap: nowrap;  
+  text-wrap: nowrap;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -118,7 +118,7 @@ header {
 
 /* ── HERO ── */
 .hero {
-  background: #303F51;
+  background: #303f51;
   color: #fff;
   text-align: center;
   padding: 6% 5%;
@@ -180,20 +180,20 @@ header {
   text-align: center;
   font-size: 2vw;
   font-weight: bold;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .categoria-elettronica {
-  background: #232F3E;
+  background: #232f3e;
 }
 .categoria-libri {
-  background: #C45500;
+  background: #c45500;
 }
 .categoria-abbigliamento {
-  background: #146EB4;
+  background: #146eb4;
 }
 .categoria-casa {
-  background: #067D62;
+  background: #067d62;
 }
 
 .categoria-info {
@@ -213,7 +213,7 @@ header {
 }
 .categoria-link:hover {
   text-decoration: underline;
-  color: #C45500;
+  color: #c45500;
 }
 
 /* ── PRODOTTI ── */
@@ -244,7 +244,6 @@ header {
 
 .prodotto-img {
   display: block;
-  vert
   width: 90%;
   margin-top: 10%;
   margin-left: 5%;
@@ -274,7 +273,7 @@ header {
 }
 
 .stelle {
-  color: #FF9900;
+  color: #ff9900;
   font-size: 1.2vw;
 }
 
@@ -297,7 +296,7 @@ header {
   width: 90%;
   margin: 0 5% 5%;
   padding: 2.5% 0;
-  background: #FFD814;
+  background: #ffd814;
   border-radius: 20px;
   font-size: 1vw;
   font-weight: bold;
@@ -308,7 +307,7 @@ header {
 }
 
 .prodotto-btn:hover {
-  background: #F7CA00;
+  background: #f7ca00;
 }
 
 /* ── FOOTER ── */

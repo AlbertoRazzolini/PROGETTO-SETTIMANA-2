@@ -60,7 +60,7 @@ header {
 .header-search-input {
   display: inline-block;
   vertical-align: middle;
-  width: 88%;
+  width: 75%;
   padding: 1.2% 1.5%;
   font-size: 1.3vw;
   border: none;
@@ -116,4 +116,104 @@ header {
 
 .header-clear {
   clear: both;
+}
+
+/* MAIN */
+
+/* HERO */
+
+.hero {
+  background: #232f3e;
+  color: #fff;
+  text-align: center;
+  padding: 6% 5%;
+}
+
+.hero-title {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.hero-subtitle {
+  font-size: 1.5vw;
+  opacity: 0.8;
+}
+
+/* HERO END */
+
+/* ── CATEGORIE ── */
+.categorie {
+  background: #f0f2f2;
+  padding: 2% 20%;
+}
+
+.sezione-titolo {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.categorie-griglia {
+  font-size: 0;
+}
+
+.categoria-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  margin-right: 1.33%;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  font-size: 1.2rem;
+}
+
+.catergoria-card span {
+  font-size: 100%;
+}
+
+.categoria-card:last-child {
+  margin-right: 0;
+}
+
+.categoria-img {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.categoria-elettronica {
+  background: #1a2536;
+}
+.categoria-libri {
+  background: #9c3f00;
+}
+.categoria-abbigliamento {
+  background: #1a6fa8;
+}
+.categoria-casa {
+  background: #0d6b50;
+}
+
+.categoria-info {
+  padding: 3% 4%;
+}
+
+.categoria-nome {
+  display: block;
+  font-size: 1.3vw;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.categoria-link {
+  font-size: 1.2vw;
+  color: #007185;
 }

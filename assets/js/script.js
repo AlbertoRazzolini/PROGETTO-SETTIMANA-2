@@ -14,7 +14,104 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const prodotti = [
+  {
+    nome: "Cuffie wireless",
+    categoria: "elettronica",
+    prezzo: 90
+    rating: 4.2,
+    immagine: "Cuffie",
+    disponibile: true
+  },
+  {
+    nome: "Tablet 32gb"
+    categoria: "elettronica",
+    prezzo: 200,
+    rating: 4.7,
+    immagine: "Tablet",
+    disponibile: true
+  },
+  {
+    nome: "Libri liberi",
+    categoria: "libri",
+    prezzo: 15,
+    rating: 4.0,
+    immagine: "Libro",
+    disponibile: true
+  },
+  {
+    nome: "Zaino da trekking"
+    categoria: "abbigliamento",
+    prezzo: 50,
+    rating: 4.3,
+    immagine: "Zaino",
+    disponibile: false
+  },
+  {
+    nome: "Lampada LED",
+    categoria: "casa",
+    prezzo: 29,
+    rating: 3.8,
+    immagine: "Lampada",
+    disponibile: false
+  },
+  {
+    nome: "Smartwatch GPS",
+    categoria: "elettronica",
+    prezzo: 119,
+    rating: 4.4,
+    immagine: "Smartwatch",
+    disponibile: true
+  },
+  {
+    nome: "Mouse wireless",
+    categoria: "elettronica",
+    prezzo: 25,
+    rating: 4.1,
+    immagine: "Mouse",
+    disponibile: true
+  },
+  {
+    nome: "Moka",
+    categoria: "casa",
+    prezzo: 22,
+    rating: 4.6,
+    immagine: "Caffettiera",
+    disponibile: true
+  },
+  {
+    nome: "Romanzo storico",
+    categoria: "libri",
+    prezzo: 13,
+    rating: 4.5,
+    immagine: "Romanzo",
+    disponibile: false
+  },
+  {
+    nome: "Giacca invernale",
+    categoria: "abbigliamento",
+    prezzo: 89,
+    rating: 4.2,
+    immagine: "Giacca",
+    disponibile: false
+  },
+  {
+    nome: "Aspirapolvere Dayson",
+    categoria: "casa",
+    prezzo: 249,
+    rating: 4.8,
+    immagine: "Aspirapolvere",
+    disponibile: true
+  },
+  {
+    nome: "Tastiera meccanica",
+    categoria: "elettronica",
+    prezzo: 79,
+    rating: 4.3,
+    immagine: "Tastiera",
+    disponibile: false
+  }
+];
 /* VERSIONE INTERMEDIA — formattaPrezzo(prezzo)
    Funzione che ritorna una stringa tipo "€ 19,99".
    Esempio in console.log: Monitor: € 150,00
